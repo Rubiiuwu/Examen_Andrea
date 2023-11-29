@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-     private Rigidbody2D _rb;
+    private Rigidbody2D _rb;
     [SerializeField]private float _playerSpeed = 5; 
     [SerializeField]private float _jumpForce = 5;
     private float _playerInput;
@@ -19,11 +19,11 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        /*if (Input.GetButtonDown("Jump") && GroundSensor._isGrounded) 
+        if (Input.GetButtonDown("Jump") && GroundSensor.isGrounded) 
         {
             Jump();
         }
-        _anim.SetBool("isJumping", !GroundSensor._isGrounded); */
+        _anim.SetBool("isJumping", !GroundSensor.isGrounded); 
     }
 
     private void FixedUpdate() 
@@ -52,8 +52,8 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    /*void Jump() 
+    void Jump() 
     {
         _rb.AddForce(Vector2.up *_jumpForce, ForceMode2D.Impulse);
-    }*/
+    }
 }
