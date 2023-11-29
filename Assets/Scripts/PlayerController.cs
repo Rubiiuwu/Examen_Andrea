@@ -5,8 +5,8 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     private Rigidbody2D _rb;
-    [SerializeField]private float _playerSpeed = 5; 
-    [SerializeField]private float _jumpForce = 5;
+    [SerializeField]private float _playerSpeed = 3; 
+    [SerializeField]private float _jumpForce = 3;
     private float _playerInput;
     [SerializeField]private Animator _anim;
 
